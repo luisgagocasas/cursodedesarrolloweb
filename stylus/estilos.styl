@@ -1,0 +1,193 @@
+@css {
+/*  CSS3 Clases - Luis Gago Casas */
+}
+@import 'nib/vendor'
+@import 'simplegrid'
+vendor-prefixes = o ms moz webkit
+@font-face
+	font-family 'Open Sans'
+	font-style normal
+	font-weight 400
+	src local('Open Sans'), local('Open Sans'), url("../fonts/opensans.woff") format('woff')
+@font-face
+	font-family 'Josefin Slab'
+	font-style normal
+	font-weight 400
+	src local('Josefin Slab'), local('JosefinSlab'), url("../fonts/Josefin_Slab.woff") format('woff')
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	ms-border-radius arguments
+	o-border-radius arguments
+	border-radius arguments
+appearance()
+	-webkit-appearance arguments
+	-moz-appearance arguments
+	ms-appearance arguments
+	o-appearance arguments
+	appearance arguments
+box-shadow()
+	-webkit-box-shadow arguments
+	-moz-box-shadow arguments
+	ms-box-shadow arguments
+	o-box-shadow arguments
+	box-shadow arguments
+transform()
+	-webkit-transform arguments
+	-moz-transform arguments
+	ms-transform arguments
+	o-transform arguments
+	transform arguments
+transition()
+	-webkit-transition arguments
+	-moz-transition arguments
+	ms-transition arguments
+	o-transition arguments
+	transition arguments
+zoom()
+	-ms-zoom arguments
+	-webkit-zoom arguments
+	zoom arguments
+background-size()
+	-webkit-background-size arguments
+	-moz-background-size arguments
+	ms-background-size arguments
+	o-background-size arguments
+	background-size arguments
+body
+	background #FFF
+	font-family 'Open Sans',Arial,Sans-serif;
+	font-size 16px
+*
+	margin 0
+a
+	color #FFF
+	text-decoration none
+ul
+	margin 0px
+	padding 0px 0px 0px 15px
+li
+	list-style none
+.wrapper
+	margin 0 auto
+	position relative
+.header
+	background-color #103950
+	color #fff
+	margin 0 auto
+	.cabecera
+		height 50px
+		.conteiner
+			margin 0 auto
+			max-width 1000px
+			position relative
+.cabecera
+	background #1873BB
+	border-top 5px solid #5B9230
+	.logo
+		background url("../img/icono-1.png") no-repeat
+		background-size: 60px auto
+		float left
+		height: 45px
+		line-height 55px
+		position relative
+		width: 100px
+		z-index 7
+.menu
+	height inherit
+	left 0
+	margin 0 auto
+	position absolute
+	right 0
+	top 0
+	z-index 6
+	.lista
+		font-size 0
+		padding 0
+		text-align right
+		.tab
+			-moz-transform scale(1,1)
+			-moz-transform-origin left center
+			// font-weight: 600
+			display inline-block
+			font-size 14px
+			height 50px
+			text-align center
+			text-transform uppercase
+			vertical-align top
+			zoom 1
+			a
+				// border-radius 5px 5px 0 0
+				// margin-top 5px
+				color #fff
+				display block
+				height 50px
+				line-height 50px
+				padding 0 20px
+				text-align center
+				transition .2s background
+			&:hover a, &.active
+				background #99865C
+.portada
+	background url("../img/portada.png") no-repeat left
+	background-size  500px auto
+	height 440px
+	margin 0px auto 0px auto
+	max-width 1000px
+	position relative
+.soyyo
+	line-height 50px
+	position absolute
+	right 0
+	top 140px
+	.luisgago
+		font-size 3.7em
+		text-shadow 3px 3px 0 #1f86a6,8px 10px 0 rgba(0, 0, 0, 0.2)
+	.soy
+		font-family 'Josefin Slab', serif
+		font-size 2.5em
+		padding 0px 20px 0px 0px
+		text-align right
+.flotante
+	border-top 0px
+	box-shadow 0 1px 5px #000
+	left 0
+	position fixed
+	right 0
+	top 0
+	z-index 99
+.contenido
+	margin 0px auto 0px auto
+	max-width 1000px
+	position relative
+	.aprendo
+		margin: 10px auto
+		.img
+			padding 5px
+		.texto
+			padding 5px
+			text-align justify
+		.orden
+			background-color: #972E2E
+			border-radius 50px
+			color: #FFF
+			font-size: 30px
+			height 50px
+			line-height: 50px
+			margin: 10px 10px 10px 10px
+			padding: 0px 17px
+			width 50px
+	.left
+		.img
+			float right
+		.orden
+			float left
+	.right
+		.img
+			float left
+		.orden
+			float right
+.section
+	display inline-block
+	&:hover
+		background-color #eee
