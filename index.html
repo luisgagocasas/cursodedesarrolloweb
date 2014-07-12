@@ -12,8 +12,13 @@
 		<header class="header">
 			<div class="portada">
 				<div class="soyyo">
-					<h2 class="soy">Curso de</h2>
-					<h1 class="luisgago">Desarrollo Web</h1>
+					<h2 class="cursode">Curso de</h2>
+					<h1 class="desarrolloweb">Desarrollo Web</h1>
+					<h2 class="cursode"><span class="pequenio">Matriculate en</span> <a href="https://maestro21.edu.pe/course/view.php?id=83">Maestro21.edu.pe</a></h2>
+					<div class="acceso cursode">
+						<span class="icon-key llaveico"></span>
+						<h2>desarrollo21</h2>
+					</div>
 				</div>
 			</div>
 			<div class="cabecera" id="aflotar">
@@ -21,10 +26,10 @@
 					<a href="/" class="logo"></a>
 					<nav class="menu">
 						<ul class="lista">
-							<li class="tab" id="menu"><a href="#silabo">Silabo</a></li>
-							<li class="tab" id="menu"><a href="#plataforma">Plataforma</a></li>
-							<li class="tab" id="menu"><a href="#software">Software</a></li>
-							<li class="tab" id="menu"><a href="#chau">Recomienda</a></li>
+							<li class="tab val1" id="menu"><a href="#silabo">Silabo</a></li>
+							<li class="tab val2" id="menu"><a href="#plataforma">Plataforma</a></li>
+							<li class="tab val3" id="menu"><a href="#horarios">Horarios</a></li>
+							<li class="tab val4" id="menu"><a href="#chau">Recomienda</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -79,7 +84,6 @@
 						</p>
 				    </div>
 				</section>
-				<h5 class="bonus">Bonus</h5>
 				<section class="section" id="5">
 				    <div class="col-8-12 aprendo left">
 						<span class="orden">5</span>
@@ -88,15 +92,27 @@
 						</p>
 				    </div>
 				    <div class="col-4-12 aprendo left">
+						<img src="img/icomoon.png" class="img">
+				    </div>
+			    </section>
+				<h5 class="bonus">Bonus</h5>
+				<section class="section" id="6">
+				    <div class="col-8-12 aprendo left">
+						<span class="orden">6</span>
+						<p class="texto">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque earum nihil id excepturi laborum laboriosam facere ratione nam, enim consectetur labore? Culpa laudantium suscipit earum quisquam, aliquam dignissimos cupiditate quo quia cumque reiciendis. Magni, commodi, porro in harum veniam libero?
+						</p>
+				    </div>
+				    <div class="col-4-12 aprendo left">
 						<img src="img/bootstrap.png" class="img">
 				    </div>
 			    </section>
-			    <section class="section" id="6">
+			    <section class="section" id="7">
 				    <div class="col-4-12 aprendo right">
 						<img src="img/foundation.png" class="img">
 				    </div>
 				    <div class="col-8-12 aprendo right">
-						<span class="orden">6</span>
+						<span class="orden">7</span>
 						<p class="texto">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque earum nihil id excepturi laborum laboriosam facere ratione nam, enim consectetur labore? Culpa laudantium suscipit earum quisquam, aliquam dignissimos cupiditate quo quia cumque reiciendis. Magni, commodi, porro in harum veniam libero?
 						</p>
@@ -110,7 +126,7 @@
 					<iframe width="560" height="315" src="//www.youtube.com/embed/pQFzVr2YUGM" frameborder="0" allowfullscreen></iframe></p>
 				</div>
 			</section>
-			<div class="grid grid-pad" id="software">
+			<div class="grid grid-pad" id="horario">
 				<div class="descripcion">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt nostrum voluptatem velit eum sapiente laudantium, enim veniam vel numquam beatae repellendus. Laudantium fugiat distinctio modi, cupiditate necessitatibus asperiores corporis.</p>
 				</div>
@@ -183,12 +199,20 @@
 				</section>
 			</div>
 		</div>
-		<footer class="footer">
-			<form action="">
+		<footer class="footer" id="mensaje">
+			<form method="post" id="frmcheck">
+				<span class="icon-gift regaloico"></span>
 				<div class="msj">Se el primero en saber de nuevos cursos </div>
-				<input type="text" name="nombre" placeholder="Nombre" class="input">
-				<input type="text" name="correo" placeholder="Correo" class="input">
-				<button class="btn yellow">Suscribirme</button>
+				<span class="icon-user frmico"></span>
+				<input type="text" name="nombre" id="nombre" required placeholder="Nombre" class="input">
+				<div id="apellidos" style="display: inline-block">
+					<span class="icon-user frmico"></span>
+					<input type="text" name="apellido" required placeholder="Apellidos" class="input">
+				</div>
+				<span class="icon-mail frmico"></span>
+				<input type="email" name="correo" required placeholder="Correo" class="input">
+				<button class="btn yellow" type="submit">Suscribirme</button>
+				<span class="icon-gift regaloico"></span>
 			</form>
 		</footer>
 	</div>
