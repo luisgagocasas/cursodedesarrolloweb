@@ -66,7 +66,7 @@ a
 	text-decoration none
 ul
 	margin 0px
-	padding 0px 0px 0px 15px
+	padding 0px 0px 0px 30px
 li
 	list-style none
 .wrapper
@@ -187,6 +187,11 @@ li
 		.texto
 			padding 5px
 			text-align justify
+			a
+				color: #156115
+				font-weight: bold
+				&:hover
+					border-bottom: 2px solid #156115
 		.orden
 			background-color: #972E2E
 			border-radius 50px
@@ -236,6 +241,7 @@ li
 		box-shadow: 0px 0px 10px 0px #C9C9C9
 .section
 	display inline-block
+	width 100%
 	&:hover
 		background-color rgba(238, 238, 238, 0.5)
 .input
@@ -289,6 +295,12 @@ li
 .efectoone
 	animated()
 	animatedbounceIn()
+// Parrafos
+.ulcont
+	display inline-block
+	li
+		padding: 0px
+		list-style-type: circle
 // Iconos
 .llaveico
 	font-size: 30px
