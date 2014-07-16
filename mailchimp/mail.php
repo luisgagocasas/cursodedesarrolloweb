@@ -11,12 +11,12 @@ $merge_vars = array('NOMBRES'=>$nombre, 'APELLIDOS'=>$apellido);
 
 $resultado=$mailchimp->listSubscribe($listId,$email,$merge_vars);
 //Controlamos los errores
-if ($mailchimp->errorCode){
+if (!$mailchimp->errorCode){
     $respuesta->mensaje ="\tCode=".$mailchimp->errorCode."\n";
     $respuesta->mensaje .="\tMsg=".$mailchimp->errorMessage."\n";
 }
 else {
-   $respuesta->mensaje = "Revise su correo para confirmar tu suscripción.";
+   $respuesta->mensaje = "<span class=\"icon-trophy copacolor\"></span> Revise su correo para confirmar tu suscripción. <span class=\"icon-trophy copacolor\"></span>";
 }
 echo json_encode($respuesta);
 ?>

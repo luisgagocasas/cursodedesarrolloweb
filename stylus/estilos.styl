@@ -139,7 +139,7 @@ li
 	margin 0px auto 0px auto
 	max-width 1000px
 	position relative
-.soyyo
+.curso
 	line-height 50px
 	position absolute
 	right 0
@@ -147,25 +147,40 @@ li
 	.desarrolloweb
 		font-size 3.7em
 		text-shadow 3px 3px 0 #1f86a6,8px 10px 0 rgba(0, 0, 0, 0.2)
+		text-align center
 	.cursode
-		font-family 'Josefin Slab', serif
+		// font-family 'Josefin Slab', serif
 		font-size 2.3em
 		text-align center
 		a:hover
 			color: #088608
 			border-bottom: 4px solid #FFF
+	.clavede
+		font-size 2.3em
+		text-align center
 	.pequenio
 		font-size 0.5em
 	.acceso
-		margin 30px 0px 0px 0px
-		background-color #21657A
+		margin 20px 0px 0px 0px
+		// background-color #ffc43a
+		background-color #0d373a
 		padding: 10px 0px 0px 0px
-		box-shadow 0px 5px 5px 0px #245064
 		h2
 			line-height 20px
 			display inline-block
 		.pequenio
 			font-size 0.3em
+	.live
+		// background-color #e74c3c
+		// height 50px
+		text-align: center
+		// border-left: 5px solid #000
+		// border-right: 5px solid #000
+		margin: 35px 0px 0px 0px
+	.calico
+		font-size: 32px
+		padding: 0px 0px 0px 10px
+		line-height: 50px !important
 .flotante
 	border-top 0px
 	box-shadow 0 1px 5px #000
@@ -249,7 +264,7 @@ li
 	box-sizing: border-box
 	font-size: inherit
 	outline: 0
-	padding-left: 35px
+	padding-left: 5px
 	width: 200px
 	height: 30px
 	border: 0px
@@ -269,7 +284,7 @@ li
 	-moz-transform-origin: left center
 	font-size: 14px
 	padding: 5px 5px
-	vertical-align: top
+	vertical-align: middle
 	white-space: nowrap
 .yellow
 	background: #ffc33e;
@@ -303,17 +318,49 @@ li
 		list-style-type: circle
 // Iconos
 .llaveico
-	font-size: 30px
+	font-size: 40px
 	display: inline-block
-	color: #40B323
+	color: #008fd5
+.llaves
+	display inline-block
+.llavetext
+	font-size: 20px
+	display: block
+	line-height: 0px
+	color: #008fd5
+	font-weight: bold
 .regaloico
-	font-size: 30px
+	font-size: 40px
 	color: #40b323
 	vertical-align: middle
+	display inline-block
 .frmico
 	color: #1F7894
-	position: absolute
-	margin: 7px 0px 0px 5px
+	vertical-align: middle
+.copacolor
+	color: #928918
+	font-size: 20px
+// menu icos
+.menuico
+	font-size: 23px
+	vertical-align: middle
+// Cuenta regresiva
+.countdown
+	display: inline-block
+	vertical-align: super
+	& > p
+		padding-top:3px
+	& .counter
+		left:-20px
+		margin:5px 0 0
+		padding:5px 0 3px 20px
+		position:relative
+		width:100%
+		font-size: 20px
+	& .counter > div
+		display:inline-block
+	& .counter > div span:nth-of-type(2)
+		font-size:15px
 @font-face
 	font-family: 'icomoon'
 	src:url('../fonts/icomoon.eot?c5594q')
@@ -363,3 +410,5 @@ li
 	content: "\e60d"
 .icon-github:before
 	content: "\e60e"
+.icon-trophy:before
+	content: "\e60f"

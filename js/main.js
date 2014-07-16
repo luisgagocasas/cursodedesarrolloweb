@@ -64,4 +64,14 @@ $(document).ready( function(){
 		$("#apellidos").css("display","inline-block");
 		$(".msj").css("display","none");
 	});
+	// Cuenta regresiva
+	var $countdown = $('.countdown');
+    $countdown.scountdown({
+        timestamp: parseInt(1406017300000, 10),
+        callback: function (d, h, m, s) {
+            $(".dias", $countdown).text(d);
+            $(".horas", $countdown).text(h);
+            $(".minutos", $countdown).text(m);
+            $(".segundos", $countdown).text(s);
+    }});
 });
