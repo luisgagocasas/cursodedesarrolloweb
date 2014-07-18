@@ -67,7 +67,7 @@ $(document).ready( function(){
 	// Cuenta regresiva
 	var $countdown = $('.countdown');
     $countdown.scountdown({
-        timestamp: parseInt(1406017300000, 10),
+        timestamp: parseInt(1407204000000, 10),
         callback: function (d, h, m, s) {
             $(".dias", $countdown).text(d);
             $(".horas", $countdown).text(h);
