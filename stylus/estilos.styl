@@ -343,14 +343,28 @@ li
 .fechaico
 	color #928918
 	font-size: 35px
-	display block
+	margin: 0px 5px 0px 0px
 // fechas
 .fechaenlace
-	color: #088608
-	border-bottom: 4px solid #fff
-	display block
+	color: #FFFFFF
+	font-size: 16px
+	background-color: #388674
+	border-radius: 5px
+	padding: 2px
+.fechablock:nth-of-type(odd)
+	background-color rgba(196, 196, 196, 0.1)
+.fechaclases
+	display: inline-block
+	line-height: 20px
+	vertical-align: bottom
+	.fechaclase
+		color: #0E5E11
+		font-weight: bold
+		text-transform: uppercase;
+		font-size: 15px;
 .rightfecha
 	text-align right
+	font-size 0px
 // menu icos
 .menuico
 	font-size: 23px
@@ -395,7 +409,8 @@ li
 		line-height: 25px
 		padding: 5px
 		vertical-align: super
-		width: 35px
+		width: 80px
+		text-shadow: 0px 2px 1px #000
 @font-face
 	font-family: 'icomoon'
 	src:url('../fonts/icomoon.eot?c5594q')
