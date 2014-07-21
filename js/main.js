@@ -8,6 +8,7 @@ $(document).ready( function(){
     $("#silabo").css("display","block");
 	$("#plataforma").css("display","none");
 	$("#horario").css("display","none");
+	$("#luisgagocasas").css("display","none");
 	$("title").html("Silabo del "+titulo);
 	$(".val1").addClass("marcado");
 	$("#apellidos").css("display","none");
@@ -19,6 +20,7 @@ $(document).ready( function(){
 			$("#silabo").addClass("efectoone");
 			$("#plataforma").css("display","none");
 			$("#horario").css("display","none");
+			$("#luisgagocasas").css("display","none");
 			$("title").html("Silabo del "+titulo);
 			$(".val1").addClass("marcado");
 			$(".val2").removeClass("marcado");
@@ -28,6 +30,7 @@ $(document).ready( function(){
 		else if(strAncla=="#plataforma"){
 			$("#silabo").css("display","none");
 			$("#horario").css("display","none");
+			$("#luisgagocasas").css("display","none");
 			$("#plataforma").css({"display":"block", "margin": "25px 0px 0px"});
 			$("#plataforma").addClass("efectoone");
 			$("title").html("Plataforma del "+titulo);
@@ -39,13 +42,26 @@ $(document).ready( function(){
 		else if(strAncla=="#horarios"){
 			$("#silabo").css("display","none");
 			$("#plataforma").css("display","none");
+			$("#luisgagocasas").css("display","none");
 			$("#horario").css({"display":"block", "margin": "25px 0px 0px"});
 			$("#horario").addClass("efectoone");
-			$("title").html("Software para el "+titulo);
+			$("title").html("Horarios de "+titulo);
 			$(".val1").removeClass("marcado");
 			$(".val2").removeClass("marcado");
 			$(".val3").addClass("marcado");
 			$(".val4").removeClass("marcado");
+		}
+		else if(strAncla=="#luisgagocasas"){
+			$("#silabo").css("display","none");
+			$("#plataforma").css("display","none");
+			$("#horario").css("display","none");
+			$("#luisgagocasas").css({"display":"block", "margin": "25px 0px 0px"});
+			$("#luisgagocasas").addClass("efectoone");
+			$("title").html("Profesor de "+titulo);
+			$(".val1").removeClass("marcado");
+			$(".val2").removeClass("marcado");
+			$(".val3").removeClass("marcado");
+			$(".val4").addClass("marcado");
 		}
 	});
 	$("#frmcheck").submit(function(){
