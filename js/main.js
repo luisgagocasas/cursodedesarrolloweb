@@ -9,7 +9,6 @@ $(document).ready( function(){
 	$("#plataforma").css("display","none");
 	$("#horario").css("display","none");
 	$("#luisgagocasas").css("display","none");
-	$("title").html("Silabo del "+titulo);
 	$(".val1").addClass("marcado");
 	$("#apellidos").css("display","none");
     $("#menu>a").on('click',function(e){
