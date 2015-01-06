@@ -7,7 +7,6 @@ $(document).ready( function(){
     });
     $("#silabo").css("display","block");
 	$("#luisgagocasas").css("display","none");
-	$("#silaboaplicaciones").css("display","none");
 	$(".val1").addClass("marcado");
 	$("#apellidos").css("display","none");
     $("#menu>a").on('click',function(e){
