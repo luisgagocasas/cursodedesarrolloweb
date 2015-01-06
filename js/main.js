@@ -7,6 +7,7 @@ $(document).ready( function(){
     });
     $("#silabo").css("display","block");
 	$("#luisgagocasas").css("display","none");
+	$("#silaboaplicaciones").css("display","none");
 	$(".val1").addClass("marcado");
 	$("#apellidos").css("display","none");
     $("#menu>a").on('click',function(e){
@@ -15,6 +16,16 @@ $(document).ready( function(){
 		if(strAncla=="#silabo"){
 			$("#silabo").css({"display":"block", "margin": "25px 0px 0px"});
 			$("#silabo").addClass("efectoone");
+			$("#silaboaplicaciones").css("display","none");
+			$("#luisgagocasas").css("display","none");
+			$("title").html("Silabo del "+titulo);
+			$(".val1").addClass("marcado");
+			$(".val2").removeClass("marcado");
+			$(".val3").removeClass("marcado");
+		}
+		else if(strAncla=="#silaboaplicaciones"){
+			$("#silaboaplicaciones").css({"display":"block", "margin": "25px 0px 0px"});
+			$("#silaboaplicaciones").addClass("efectoone");
 			$("#plataforma").css("display","none");
 			$("#horario").css("display","none");
 			$("#luisgagocasas").css("display","none");
@@ -22,19 +33,16 @@ $(document).ready( function(){
 			$(".val1").addClass("marcado");
 			$(".val2").removeClass("marcado");
 			$(".val3").removeClass("marcado");
-			$(".val4").removeClass("marcado");
 		}
 		else if(strAncla=="#luisgagocasas"){
 			$("#silabo").css("display","none");
-			$("#plataforma").css("display","none");
-			$("#horario").css("display","none");
+			$("#silaboaplicaciones").css("display","none");
 			$("#luisgagocasas").css({"display":"block", "margin": "25px 0px 0px"});
 			$("#luisgagocasas").addClass("efectoone");
 			$("title").html("Profesor de "+titulo);
 			$(".val1").removeClass("marcado");
 			$(".val2").removeClass("marcado");
-			$(".val3").removeClass("marcado");
-			$(".val4").addClass("marcado");
+			$(".val3").addClass("marcado");
 		}
 	});
 	// Cuenta regresiva
