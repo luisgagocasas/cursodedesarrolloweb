@@ -6,8 +6,6 @@ $(document).ready( function(){
         else{ jQuery('#aflotar').removeClass("flotante"); }
     });
     $("#silabo").css("display","block");
-	$("#plataforma").css("display","none");
-	$("#horario").css("display","none");
 	$("#luisgagocasas").css("display","none");
 	$(".val1").addClass("marcado");
 	$("#apellidos").css("display","none");
@@ -26,30 +24,6 @@ $(document).ready( function(){
 			$(".val3").removeClass("marcado");
 			$(".val4").removeClass("marcado");
 		}
-		else if(strAncla=="#plataforma"){
-			$("#silabo").css("display","none");
-			$("#horario").css("display","none");
-			$("#luisgagocasas").css("display","none");
-			$("#plataforma").css({"display":"block", "margin": "25px 0px 0px"});
-			$("#plataforma").addClass("efectoone");
-			$("title").html("Plataforma del "+titulo);
-			$(".val1").removeClass("marcado");
-			$(".val2").addClass("marcado");
-			$(".val3").removeClass("marcado");
-			$(".val4").removeClass("marcado");
-		}
-		else if(strAncla=="#horarios"){
-			$("#silabo").css("display","none");
-			$("#plataforma").css("display","none");
-			$("#luisgagocasas").css("display","none");
-			$("#horario").css({"display":"block", "margin": "25px 0px 0px"});
-			$("#horario").addClass("efectoone");
-			$("title").html("Horarios de "+titulo);
-			$(".val1").removeClass("marcado");
-			$(".val2").removeClass("marcado");
-			$(".val3").addClass("marcado");
-			$(".val4").removeClass("marcado");
-		}
 		else if(strAncla=="#luisgagocasas"){
 			$("#silabo").css("display","none");
 			$("#plataforma").css("display","none");
@@ -63,27 +37,11 @@ $(document).ready( function(){
 			$(".val4").addClass("marcado");
 		}
 	});
-	$("#frmcheck").submit(function(){
-        var formulario = $("#frmcheck").serializeArray();
-        $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: "mailchimp/mail.php",
-            data: formulario
-        }).done(function(respuesta){
-            $("#mensaje").html(respuesta.mensaje).fadeIn();
-        });
-        return false;
-    });
-	$("#nombre").focus(function() {
-		$("#apellidos").css("display","inline-block");
-		$(".msj").css("display","none");
-	});
 	// Cuenta regresiva
 	var $countdown = $('.countdown');
     $countdown.scountdown({
     	// timestampgenerator.com
-        timestamp: parseInt(1407549600000, 10),
+        timestamp: parseInt(1420902000000, 10),
         callback: function (d, h, m, s) {
             $(".dias", $countdown).text(d);
             $(".horas", $countdown).text(h);
@@ -92,3 +50,11 @@ $(document).ready( function(){
     	}
 	});
 });
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-42042618-4', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
