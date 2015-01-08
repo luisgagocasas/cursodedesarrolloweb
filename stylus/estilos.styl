@@ -129,9 +129,17 @@ li
 				text-align center
 				transition 0.3s
 			&:hover a, &.active
-				background #99865C
+				background #5b9230
 .marcado
-	background #99865C
+	background #5b9230
+	&:after
+		position: absolute
+		bottom: -10px
+		border-left: 12px solid transparent
+		border-right: 12px solid transparent
+		border-top: 10px solid #5b9230
+		content: ''
+		margin-left: -12px
 .portada
 	background url("../img/portada.png") no-repeat left
 	background-size  500px auto
@@ -208,25 +216,26 @@ li
 			&:hover
 				border-bottom: 2px solid #156115
 	.orden
-		background-color: #1A83CF
-		border-radius 50px
-		color: #FFF
-		font-size: 30px
-		line-height: 50px
-		margin: 25px 10px 0px 10px
-		padding: 0px 17px
-		width 200px
-		text-align center
+		color: #fff
+		font-size: 25px
+		line-height: 40px
+		margin: 25px 5px 0 15px
+		width: 100%
+		text-align: center
 .left
 	.img
 		float right
 	.orden
 		float left
+	.enero, .febrero
+		border-radius: 50px 0px 0px 50px
 .right
 	.img
 		float left
 	.orden
 		float right
+	.enero, .febrero
+		border-radius: 0px 50px 50px 0px
 .bonus
 	text-align: center
 	font-size: 50px
@@ -260,7 +269,8 @@ li
 	display inline-block
 	width 100%
 	&:hover
-		background-color rgba(238, 238, 238, 0.5)
+		// background-color rgba(238, 238, 238, 0.5)
+		background-color rgba(255, 223, 0, 0.5)
 .input
 	border-radius: 5px
 	box-sizing: border-box
@@ -309,6 +319,28 @@ li
 		display: inline-block
 		font-size: 18px
 		vertical-align: middle
+.enero
+	background-color #CB4545
+	&:before
+		border-top 475px solid #CB4545
+		border-left: 5px solid #CB4545
+		border-right: 5px solid #CB4545
+.febrero
+	background-color #5b9230
+	&:before
+		border-top: 475px solid #5b9230
+		border-left: 5px solid #5b9230
+		border-right: 5px solid #5b9230
+.que_mes
+	padding: 5px
+	font-size: 1.7em
+	text-align: center
+	color: #fff
+	border-radius: 100px 100px 0px 0px
+	&:before
+		position: absolute
+		content: ''
+		margin: 41px 0 0 -5px
 .efectoone
 	animated()
 	animatedbounceIn()

@@ -1,5 +1,5 @@
 $(document).ready( function(){
-	var titulo = "Curso de Desarrollo Web";
+	var titulo = "Maestro21";
     jQuery(window).scroll(function(){
         var scrollTop = jQuery(window).scrollTop();
         if(scrollTop >= 450){ jQuery('#aflotar').addClass("flotante"); }
@@ -18,20 +18,19 @@ $(document).ready( function(){
 			$("#silabo").addClass("efectoone");
 			$("#silaboaplicaciones").css("display","none");
 			$("#luisgagocasas").css("display","none");
-			$("title").html("Silabo del "+titulo);
+			$("title").html("Silabo del Desarrollo Web"+titulo);
 			$(".val1").addClass("marcado");
 			$(".val2").removeClass("marcado");
 			$(".val3").removeClass("marcado");
 		}
 		else if(strAncla=="#silaboaplicaciones"){
+			$("#silabo").css("display","none");
+			$("#luisgagocasas").css("display","none");
 			$("#silaboaplicaciones").css({"display":"block", "margin": "25px 0px 0px"});
 			$("#silaboaplicaciones").addClass("efectoone");
-			$("#plataforma").css("display","none");
-			$("#horario").css("display","none");
-			$("#luisgagocasas").css("display","none");
-			$("title").html("Silabo del "+titulo);
-			$(".val1").addClass("marcado");
-			$(".val2").removeClass("marcado");
+			$("title").html("Silabo de Aplicaciones Web "+titulo);
+			$(".val1").removeClass("marcado");
+			$(".val2").addClass("marcado");
 			$(".val3").removeClass("marcado");
 		}
 		else if(strAncla=="#luisgagocasas"){
@@ -39,7 +38,7 @@ $(document).ready( function(){
 			$("#silaboaplicaciones").css("display","none");
 			$("#luisgagocasas").css({"display":"block", "margin": "25px 0px 0px"});
 			$("#luisgagocasas").addClass("efectoone");
-			$("title").html("Profesor de "+titulo);
+			$("title").html("Profesor "+titulo);
 			$(".val1").removeClass("marcado");
 			$(".val2").removeClass("marcado");
 			$(".val3").addClass("marcado");
