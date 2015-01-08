@@ -352,7 +352,7 @@
 				<div class="grid grid-pad">
 				    <div class="col-1-2 right">
 				    	<div class="descriprofe">
-				    		6 años creando para la web
+				    		5 años creando para la web
 				    	</div>
 				    	<div class="fotoprofe">
 				    		<img src="img/luisgagocasas.jpg">
