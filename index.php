@@ -347,12 +347,12 @@
 			</section>
 			<section id="luisgagocasas">
 				<div class="descripcion">
-					<p>El curso lo impartirá <a href="https://twitter.com/luisgagocasas" class="twitter" target="_blank">@luisgagocasas</a>, Administrador de Sistemas del Instituto de Tecnología e Investigación Maestro21, quien compartirá su experiencia y buenas prácticas en el Desarrollo Web.</p>
+					<p>El curso lo impartirá <a href="https://twitter.com/luisgagocasas" class="twitter" target="_blank">@luisgagocasas</a>, quien compartirá su experiencia y buenas prácticas en el Desarrollo Web.</p>
 				</div>
 				<div class="grid grid-pad">
 				    <div class="col-1-2 right">
 				    	<div class="descriprofe">
-				    		5 años creando para la web
+				    		6 años creando para la web
 				    	</div>
 				    	<div class="fotoprofe">
 				    		<img src="img/luisgagocasas.jpg">
