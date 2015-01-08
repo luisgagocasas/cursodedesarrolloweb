@@ -10,7 +10,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://<?=$_SERVER['SERVER_NAME'];?>" />
 	<meta property="og:image" content="https://<?=$_SERVER['SERVER_NAME'];?>/img/desarrolloweb.jpg" />
-	<meta property="og:site_name" content="cursodedesarrolloweb.com" />
+	<meta property="og:site_name" content="<?=$_SERVER['SERVER_NAME'];?>" />
 	<meta property="fb:admins" content="100000476487163" />
 	<link rel="stylesheet" href="css/estilos.css" />
 	<script src="js/jquery-1.11.1.min.js"></script>
