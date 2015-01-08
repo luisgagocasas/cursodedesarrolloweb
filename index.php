@@ -8,7 +8,7 @@
 	<meta property="og:description" content="Aprende muchas técnicas para desarrollar un sitio web desde lo más básico, con las herramientas que usan los grandes desarrolladores de reconocidas empresas." />
 	<meta property="og:title" content="Curso de Desarrollo Web y Aplicaciones Web - Maestro21" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://<?=$_SERVER['SERVER_NAME'];?>" />
+	<meta property="og:url" content="http://<?=$_SERVER['SERVER_NAME'];?>" />
 	<meta property="og:image" content="https://<?=$_SERVER['SERVER_NAME'];?>/img/desarrolloweb.jpg" />
 	<meta property="og:site_name" content="cursodedesarrolloweb.com" />
 	<meta property="fb:admins" content="100000476487163" />
